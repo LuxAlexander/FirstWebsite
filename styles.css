@@ -54,6 +54,7 @@ footer{
 }
 nav{
     position:sticky;
+    z-index: 1000; /* ensures navbar stays on top */
     top:0;
     background-color: white;
 }
