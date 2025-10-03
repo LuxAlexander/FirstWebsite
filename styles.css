@@ -1,63 +1,39 @@
+body{
+    background-color: whitesmoke;
+    margin: 0%;
+}
+
+.body-margin{
+    margin: 2%;
+}
+
 header{
     display:flex;
     justify-content:space-between;
     align-items: center;
 }
-.body-margin{
-    margin: 2%;
-}
 header h1{
     margin: 0%;
 }
-body{
-    background-color: whitesmoke;
-    margin: 0%;
-}
-a{
-    text-decoration: none;
-    color:rgb(46, 126, 247);
-    justify-content: space-evenly;
-}
-button{
-    background-color: white;
-    border-radius: 10px;
-    padding: 1%;
-}
-ul{
-    list-style-type: none;
-    padding: 0%;
-}
-nav ul{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: transparent;
-    padding: 1%;
-}
 
-
-footer{
-    text-align: center;
-    align-items: bottom;
-    margin-top: 5%;
-    padding: 2%;
-    background-color: rgb(101, 255, 216);
-
-    grid-column: 1 / -1;  /* from first column to last */
-}
-
-.featured-article{
-    background-color: darkgrey;
-    margin-bottom: 3%;
-    font-size: 150%;
-    padding: 2%;
-    padding-right: 50%;
-}
 nav{
     position:sticky;
     z-index: 1000; /* ensures navbar stays on top */
     top:0;
-    background-color: white;
+    background-color: whitesmoke;
 }
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1%;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0%;
+}
+
 aside {
   position: sticky;
   top: 5%; /* height of nav/header combined */
@@ -69,10 +45,39 @@ aside {
   bottom: 0;           
 }
 
+footer{
+    text-align: center;
+    align-items: bottom;
+    margin-top: 5%;
+    padding: 2%;
+    background-color: rgb(101, 255, 216);
+
+    grid-column: 1 / -1;  /* from first column to last */
+}
+
 .posts {
   display: grid;
   grid-template-columns: 1fr 1fr; /* two equal columns */
   grid-gap: 1rem;
+}
+.posts h2{
+    margin: 1%;
+}
+.posts img{
+    position: absolute;
+    top: 0;      /* distance from the top of the container */
+    right: 0;    /* distance from the right edge */
+    width: 20%;
+    height: 100%;
+    margin: 0%;
+    border-radius: 10%;
+}
+.featured-article{
+    background-color: darkgrey;
+    margin-bottom: 3%;
+    font-size: 150%;
+    padding: 2%;
+    padding-right: 50%;
 }
 
 .featured-post {
@@ -84,6 +89,10 @@ aside {
 
 }
 
+.featured-post .category{
+    color:green;
+}
+
 .post-title{
     background-color: lightblue;
     position: relative;  
@@ -92,47 +101,32 @@ aside {
     gap: 20%;
 }
 
-.post-title h2{
-    margin: 1%;
-}
 .post-title .category{
     color:coral;
-}
-.post-title img{
-    position: absolute;
-    top: 0;      /* distance from the top of the container */
-    right: 0;    /* distance from the right edge */
-    width: 20%;
-    height: 100%;
-    margin: 0%;
-    border-radius: 10%;
-}
-.featured-post h2{
-    margin: 1%;
-}
-.featured-post .category{
-    color:green;
-}
-.featured-post img{
-    position: absolute;
-    top: 0;      /* distance from the top of the container */
-    right: 0;    /* distance from the right edge */
-    width: 20%;
-    height: 100%;
-    margin: 0%;
-    border-radius: 10%;
 }
 
 .main {
     margin-top: 1%;
-  display: grid;
-  grid-template-columns: 3fr 1fr; /* three equal columns and 1 */
-  grid-gap: 1rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* three equal columns and 1 */
+    grid-gap: 1rem;
 }
-time{
-    color: grey;
-    font-size: small;
-    font-style: oblique;
-    margin: 0%;
-    padding: 0%;
+
+a{
+    text-decoration: none;
+    color:rgb(46, 126, 247);
+    justify-content: space-evenly;
+}
+
+button {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1%;
+  cursor: pointer;
+}
+
+time {
+  color: grey;
+  font-size: small;
+  font-style: oblique;
 }
