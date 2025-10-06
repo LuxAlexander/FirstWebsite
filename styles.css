@@ -85,6 +85,7 @@ footer{
   align-items:flex-start; /* align top edges */
   gap: 20%;               /* space between text and image */
   background-color: lightgreen;
+  padding: 2%;
 
 }
 
@@ -98,6 +99,7 @@ footer{
     display: flex;
     align-items:flex-start; /* align top edges */
     gap: 20%;
+    padding: 2%;
 }
 
 .post-title .category{
