@@ -77,6 +77,7 @@ footer{
     font-size: 150%;
     padding: 2%;
     padding-right: 50%;
+    border: 2px solid black;
 }
 
 .featured-post {
@@ -86,6 +87,7 @@ footer{
   gap: 20%;               /* space between text and image */
   background-color: lightgreen;
   padding: 2%;
+  border: 2px solid black;
 
 }
 
@@ -100,6 +102,7 @@ footer{
     align-items:flex-start; /* align top edges */
     gap: 20%;
     padding: 2%;
+    border: 2px solid black;
 }
 
 .post-title .category{
